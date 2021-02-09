@@ -1,3 +1,2 @@
-# WebRTC Chat Tutorial
+live demo : https://the-programmer-guy.github.io/chat
 
-This is the code for the tutorial found [here](https://www.scaledrone.com/blog/posts/webrtc-chat-tutorial).
