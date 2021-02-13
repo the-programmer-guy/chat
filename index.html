@@ -13,9 +13,10 @@
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 16px;
       height: 100vh;
+      background: #1e2327;
     }
     .content {
-      box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+      
       border-radius: 3px;
       height: 100vh;
       max-height: 600px;
@@ -47,8 +48,9 @@
       border-radius: 3px;
     }
     .message--theirs .message__bubble {
-      background: #6363bf;
+      background: #038273;
       color: white;
+     
     }
     .message--mine .message__bubble {
       background: rgba(156, 172, 172, 0.2);
@@ -66,17 +68,27 @@
       padding: 0 30px;
       font-size: 16px;
       background: transparent;
+      font-family:oxygen mono;
     }
-    button {
+   button{
       border: none;
       background: transparent;
       padding: 0 30px;
       font-size: 16px;
       cursor: pointer;
+      font-family: oxygen mono;
+
+    }
+    .jj{
+      background:white;
+      border-radius: 8px;
+      font-family: oxygen mono;
+      font-size: 90%;
     }
   </style>
 </head>
 <body>
+  <div class="jj">
   <div class="content">
     <div class="messages">
 
@@ -95,6 +107,6 @@
   </template>
 
   <script src="script.js"></script>
-
+</div>
 </body>
 </html>

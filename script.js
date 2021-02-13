@@ -1,16 +1,12 @@
 const possibleEmojis = [
-  '🐀','🐁','🐭','🐹','🐂','🐃','🐄','🐮','🐅','🐆','🐯','🐇','🐐','🐑','🐏','🐴',
-  '🐎','🐱','🐈','🐰','🐓','🐔','🐤','🐣','🐥','🐦','🐧','🐘','🐩','🐕','🐷','🐖',
-  '🐗','🐫','🐪','🐶','🐺','🐻','🐨','🐼','🐵','🙈','🙉','🙊','🐒','🐉','🐲','🐊',
-  '🐍','🐢','🐸','🐋','🐳','🐬','🐙','🐟','🐠','🐡','🐚','🐌','🐛','🐜','🐝','🐞',
-];
+  '😀','😊','😃','😆','😄','😎','😉','😏','🤗'];
 function randomEmoji() {
   var randomIndex = Math.floor(Math.random() * possibleEmojis.length);
   return possibleEmojis[randomIndex];
 }
 
 const emoji = randomEmoji();
-const name = prompt("What's your name?");
+const name = prompt("Enter your name : ");
 
 // Generate random chat hash if needed
 if (!location.hash) {
@@ -142,7 +138,7 @@ function setupDataChannel() {
 function checkDataChannelState() {
   console.log('WebRTC channel state is:', dataChannel.readyState);
   if (dataChannel.readyState === 'open') {
-    insertMessageToDOM({content: 'WebRTC data channel is now open'});
+    insertMessageToDOM({content: 'You can start chatting now...'});
   }
 }
 
